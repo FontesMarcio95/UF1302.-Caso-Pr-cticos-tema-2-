@@ -1,0 +1,70 @@
+﻿<!--Declara que el navegador debe esperar un documento de tipo HTML5-->
+<!DOCTYPE html>
+<!--Especifica el idioma del contenido de los elementos, en este caso - Español-->
+<html lang="es">
+
+<head>
+    <!--Le dice al navegador qué tipo de codificación para usar-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de la página-->
+    <title>Caso Práctico Tema 2 "Uso de elementos multimedia en HTML"</title>
+    <!--Vincula un documento de estilos externo-->
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+
+<body>
+    <!--Contenido principal de la página-->
+    <main id="contenedor">
+        <!--Crea un contenedor que contiene un título, multiple audios y párrafos-->
+        <span id="principal">
+            <!--Crea un título muy representante-->
+            <header>
+                <h1>Audiolibros de terror</h1>
+            </header>
+            <!--Un párrafo que sirve como título para el audio-->
+            <p>
+                Manuscrito de un loco por Charles Dickens
+            </p>
+            <!--Agrega un audio que muestra los controles y con una mensaje de advertencia 
+            se el navegador no soporta la etiqueta de audio-->
+            <audio controls id="charles">
+                <source src="https://dn721807.ca.archive.org/0/items/narraciones_inquietantes_2108_librivox/narracionesinquietantes_01_various_128kb.mp3" type="audio/mpeg">
+                Su navegador no soporta el elemento audio.
+            </audio>
+            <!--Un párrafo que sirve como título para el audio-->
+            <p>
+                El corazón delator por Edgar A. Poe
+            </p>
+            <!--Agrega un audio que muestra los controles y con una mensaje de advertencia 
+            se el navegador no soporta la etiqueta de audio-->
+            <audio controls id="poe">
+                <source src="https://dn721807.ca.archive.org/0/items/narraciones_inquietantes_2108_librivox/narracionesinquietantes_02_various_128kb.mp3" type="audio/mpeg">
+                Su navegador no soporta el elemento audio.
+            </audio>
+            <!--Un párrafo que sirve como título para el audio-->
+            <p>
+                El gato, el alguacil y el esqueleto por A. Dumas
+            </p>
+            <!--Agrega un audio que muestra los controles y con una mensaje de advertencia 
+            se el navegador no soporta la etiqueta de audio-->
+            <audio controls id="dumas" width="100%">
+                <source src="https://dn721807.ca.archive.org/0/items/narraciones_inquietantes_2108_librivox/narracionesinquietantes_03_various_128kb.mp3" type="audio/mpeg">
+                Su navegador no soporta el elemento audio.
+            </audio>
+        </span>
+        <!--Agrega un video en bucle, reproducido automáticamente y silenciado y con una mensaje de advertencia 
+        se el navegador no soporta la etiqueta de video-->
+        <video controls loop muted autoplay id="lateral">
+            <source src="https://cdn.pixabay.com/video/2018/08/18/17844-285736480_large.mp4" type="video/mp4">
+            Su navegador no soporta el elemento video.
+        </video>
+    </main>
+    <!-- Pie de la página -->
+    <footer>
+        <p>&copy; 2025 Marcio Fontes</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/*Contenedor del contenido principal, alinea todo los textos a izquierda
+estabelece el ancho del contenedor a 100% y mostra los contenidos de forma flex */
+#contenedor {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+/*Estabele el ancho del elemento con id lateral(video) a 100% y flotado a la derecha*/
+#lateral {
+    width: 100%;
+    float: right;
+}
+/*Estabelece el ancho del elemento con id pricipal(audios y párrafos) y flotado a la izquierda*/
+#principal {
+    width: 70%;
+    float: left;
+}
+/*Esconde el elemento con id lateral(video) según el tamaño de la pantalla - para pantalla pequeñas*/
+@media screen and (max-width: 630px) and (min-width: 100px){
+    #lateral{
+        display: none;
+    }
+}
